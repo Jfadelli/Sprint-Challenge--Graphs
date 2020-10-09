@@ -38,8 +38,7 @@ class Hero:
 
 		for direction in self.player.current_room.get_exits():
 			if direction not in self.traversal_graph[self.player.current_room.id]:
-				self.traversal_graph[
-					self.player.current_room.id][direction] = '?'
+				self.traversal_graph[self.player.current_room.id][direction] = '?'
 
 
 	def reverse(self, direction):
@@ -59,9 +58,7 @@ class Hero:
 		self.path.append(direction)
 		self.update_traversal_graph()
 		if self.traversal_graph[from_room][direction] == '?':
-
 			self.traversal_graph[from_room][direction] = self.player.current_room.id
-
 			self.traversal_graph[self.player.current_room.id][self.reverse(direction)] = from_room
 
 	def make_path(self):
