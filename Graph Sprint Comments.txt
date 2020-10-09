@@ -1,35 +1,35 @@
 Graph Sprint Comments
 
-0.	Initial thoughts... Depth first search to reach end of maze, 
-	stack allows for a backtracking
+0.		Initial thoughts... Depth first search to reach end of maze, 
+		stack allows for a backtracking
 
-7. 	Create a stack
+7. 		Create a stack
 
 23. 	Create a my hero to hold importand values and logic
 
 32. 	Create function to update the traversal graph, 
-	if current room not in graph, add it to graph
+		if current room not in graph, add it to graph
 	
-	Get available directions, if direction hasn't 
-	been visited mark it as '?'
+		Get available directions, if direction hasn't 
+		been visited mark it as '?'
 
 44. 	Create reverse function that returns opposite
 
 50. 	Create move function that...
-	* takes in a direction
-	* updates the traversal graph (ln 32) sets the 
-	  "from_room" attribute
-	* calls travel function from player.py and
-	  passes in direction
-	* updates the traversal graph again
-	* checks if current room is '?'
-	  sets the current location
-	  updates the reverse direction
+		* takes in a direction
+		* updates the traversal graph (ln 32) sets the 
+		  "from_room" attribute
+		* calls travel function from player.py and
+		  passes in direction
+		* updates the traversal graph again
+		* checks if current room is '?'
+		  sets the current location
+		  updates the reverse direction
 
 64. 	Create a function that makes a path for final 
-	solution (steps commented in green)
+		solution (steps commented in green)
 	
 92. 	Create a function to add directions
-	* Takes in the direction last traveled
-	* outputs a stack update for backtracking and
-	  new rooms if neighbors are unvisited
+		* Takes in the direction last traveled
+		* outputs a stack update for backtracking and
+		  new rooms if neighbors are unvisited
